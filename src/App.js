@@ -9,13 +9,13 @@ import './style/app.css'
 
   // Set the configuration for your app
   const firebaseConfig = {
-    apiKey: "AIzaSyDiMKeTwz7LgFfpPRNVc3dDQYH_A4e48Uo",
-    authDomain: "grocery-list-1ed7b.firebaseapp.com",
-    databaseURL: "https://grocery-list-1ed7b.firebaseio.com",
-    projectId: "grocery-list-1ed7b",
-    storageBucket: "grocery-list-1ed7b.appspot.com",
-    messagingSenderId: "833209511385",
-    appId: "1:833209511385:web:31f159d5098c2a96"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUKCET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
   };
   firebase.initializeApp(firebaseConfig);
 
